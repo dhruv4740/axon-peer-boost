@@ -47,6 +47,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Axon Custom Colors
+        axon: {
+          neural: "hsl(var(--axon-neural))",
+          "neural-light": "hsl(var(--axon-neural-light))",
+          blockchain: "hsl(var(--axon-blockchain))",
+          "blockchain-light": "hsl(var(--axon-blockchain-light))",
+          science: "hsl(var(--axon-science))",
+          "science-light": "hsl(var(--axon-science-light))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +71,22 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-neural": "var(--gradient-neural)",
+        "gradient-blockchain": "var(--gradient-blockchain)",
+        "gradient-card": "var(--gradient-card)",
+      },
+      boxShadow: {
+        neural: "var(--shadow-neural)",
+        blockchain: "var(--shadow-blockchain)",
+        card: "var(--shadow-card)",
+        glow: "var(--shadow-glow)",
+      },
+      transitionTimingFunction: {
+        smooth: "var(--transition-smooth)",
+        bounce: "var(--transition-bounce)",
       },
       keyframes: {
         "accordion-down": {

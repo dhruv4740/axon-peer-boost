@@ -2,39 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Axon DeSci Platform Design System - Scientific Excellence Meets Blockchain Innovation */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Academic Authority - Deep Blue */
+    --primary: 231 76% 32%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Blockchain Innovation - Teal */
+    --secondary: 171 77% 42%;
+    --secondary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Scientific Excellence - Purple */
+    --accent: 262 52% 47%;
+    --accent-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 231 76% 32%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Custom Axon Design Tokens */
+    --axon-neural: 231 76% 32%;
+    --axon-neural-light: 231 76% 45%;
+    --axon-blockchain: 171 77% 42%;
+    --axon-blockchain-light: 171 77% 55%;
+    --axon-science: 262 52% 47%;
+    --axon-science-light: 262 52% 60%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--axon-neural)), hsl(var(--axon-science)));
+    --gradient-neural: linear-gradient(120deg, hsl(var(--axon-neural)), hsl(var(--axon-neural-light)));
+    --gradient-blockchain: linear-gradient(120deg, hsl(var(--axon-blockchain)), hsl(var(--axon-blockchain-light)));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14% 98%));
+    
+    /* Shadows */
+    --shadow-neural: 0 10px 30px -10px hsl(var(--axon-neural) / 0.3);
+    --shadow-blockchain: 0 8px 25px -8px hsl(var(--axon-blockchain) / 0.4);
+    --shadow-card: 0 4px 20px -4px hsl(220 9% 46% / 0.1);
+    --shadow-glow: 0 0 30px hsl(var(--axon-neural) / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
