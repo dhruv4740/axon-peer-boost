@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import { ArrowRight, Zap, Shield, Award, Network, FileCheck, Coins } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
@@ -41,13 +42,17 @@ export const HeroSection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-            Start Reviewing
-            <ArrowRight className="h-5 w-5 ml-2" />
-          </Button>
-          <Button variant="outline-neural" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-axon-neural">
-            Submit Paper
-          </Button>
+          <Link to="/login">
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+              Join the Network
+              <ArrowRight className="h-5 w-5 ml-2" />
+            </Button>
+          </Link>
+          <Link to="/dashboard">
+            <Button variant="outline-neural" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-axon-neural">
+              Enter Dashboard
+            </Button>
+          </Link>
         </div>
         
         {/* Key metrics */}
