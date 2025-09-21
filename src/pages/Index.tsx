@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { HeroSection, FeaturesSection } from "@/components/home/HeroSection";
 import { DashboardStats, ReputationCard, TokenBalance } from "@/components/dashboard/DashboardCards";
 import { ReviewQueue } from "@/components/dashboard/ReviewQueue";
@@ -36,31 +35,27 @@ const Index = () => {
             </div>
             
             <div className="hidden md:flex items-center gap-6">
-              <Link to="/dashboard" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#dashboard" className="text-muted-foreground hover:text-foreground transition-colors">
                 Dashboard
-              </Link>
-              <Link to="/submission" className="text-muted-foreground hover:text-foreground transition-colors">
+              </a>
+              <a href="#submit" className="text-muted-foreground hover:text-foreground transition-colors">
                 Submit Paper
-              </Link>
-              <Link to="/timeline" className="text-muted-foreground hover:text-foreground transition-colors">
+              </a>
+              <a href="#reviews" className="text-muted-foreground hover:text-foreground transition-colors">
                 Reviews
-              </Link>
-              <Link to="/profile" className="text-muted-foreground hover:text-foreground transition-colors">
-                Profile
-              </Link>
+              </a>
+              <a href="#reputation" className="text-muted-foreground hover:text-foreground transition-colors">
+                Reputation
+              </a>
             </div>
             
             <div className="flex items-center gap-3">
-              <Link to="/timeline">
-                <Button variant="ghost" size="sm">
-                  <Bell className="h-4 w-4" />
-                </Button>
-              </Link>
-              <Link to="/login">
-                <Button variant="neural" size="sm">
-                  Connect Wallet
-                </Button>
-              </Link>
+              <Button variant="ghost" size="sm">
+                <Bell className="h-4 w-4" />
+              </Button>
+              <Button variant="neural" size="sm">
+                Connect Wallet
+              </Button>
             </div>
           </div>
         </div>
@@ -115,24 +110,18 @@ const Index = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-3">
-                      <Link to="/submission">
-                        <Button variant="neural" className="w-full justify-start">
-                          <Plus className="h-4 w-4 mr-2" />
-                          Submit New Paper
-                        </Button>
-                      </Link>
-                      <Link to="/timeline">
-                        <Button variant="outline-blockchain" className="w-full justify-start">
-                          <FileText className="h-4 w-4 mr-2" />
-                          Browse Open Reviews
-                        </Button>
-                      </Link>
-                      <Link to="/payment">
-                        <Button variant="outline-neural" className="w-full justify-start">
-                          <Award className="h-4 w-4 mr-2" />
-                          Stake More Tokens
-                        </Button>
-                      </Link>
+                      <Button variant="neural" className="w-full justify-start">
+                        <Plus className="h-4 w-4 mr-2" />
+                        Submit New Paper
+                      </Button>
+                      <Button variant="outline-blockchain" className="w-full justify-start">
+                        <FileText className="h-4 w-4 mr-2" />
+                        Browse Open Reviews
+                      </Button>
+                      <Button variant="outline-neural" className="w-full justify-start">
+                        <Award className="h-4 w-4 mr-2" />
+                        Stake More Tokens
+                      </Button>
                     </CardContent>
                   </Card>
                 </div>
