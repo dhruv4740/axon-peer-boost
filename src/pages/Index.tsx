@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { HeroSection, FeaturesSection } from "@/components/home/HeroSection";
 import { DashboardStats, ReputationCard, TokenBalance } from "@/components/dashboard/DashboardCards";
 import { ReviewQueue } from "@/components/dashboard/ReviewQueue";
@@ -14,7 +15,8 @@ import {
   Clock, 
   Award,
   Plus,
-  Bell
+  Bell,
+  User
 } from "lucide-react";
 
 const Index = () => {
@@ -52,6 +54,11 @@ const Index = () => {
             <div className="flex items-center gap-3">
               <Button variant="ghost" size="sm">
                 <Bell className="h-4 w-4" />
+              </Button>
+              <Button variant="ghost" size="sm" asChild>
+                <Link to="/profile">
+                  <User className="h-4 w-4" />
+                </Link>
               </Button>
               <Button variant="neural" size="sm">
                 Connect Wallet
