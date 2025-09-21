@@ -205,89 +205,35 @@ const Profile = () => {
               </CardContent>
             </Card>
 
-            {/* Research Achievements */}
-            <Card className="border-primary/20">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Trophy className="h-5 w-5 text-primary" />
-                  Research Achievements
-                </CardTitle>
-                <CardDescription>Milestones in decentralized peer review</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="p-4 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg border border-green-200 dark:border-green-800">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Trophy className="h-4 w-4 text-green-600" />
-                      <span className="font-semibold text-green-800 dark:text-green-200">Expert Reviewer</span>
-                    </div>
-                    <p className="text-xs text-green-700 dark:text-green-300">Completed 25+ high-quality reviews</p>
-                  </div>
-                  
-                  <div className="p-4 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Star className="h-4 w-4 text-blue-600" />
-                      <span className="font-semibold text-blue-800 dark:text-blue-200">Quality Contributor</span>
-                    </div>
-                    <p className="text-xs text-blue-700 dark:text-blue-300">Maintained 4.8+ review rating</p>
-                  </div>
-                  
-                  <div className="p-4 bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg border border-purple-200 dark:border-purple-800">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Users className="h-4 w-4 text-purple-600" />
-                      <span className="font-semibold text-purple-800 dark:text-purple-200">Community Builder</span>
-                    </div>
-                    <p className="text-xs text-purple-700 dark:text-purple-300">Referred 5+ researchers to platform</p>
-                  </div>
-                  
-                  <div className="p-4 bg-gradient-to-r from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-lg border border-orange-200 dark:border-orange-800">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Coins className="h-4 w-4 text-orange-600" />
-                      <span className="font-semibold text-orange-800 dark:text-orange-200">Token Holder</span>
-                    </div>
-                    <p className="text-xs text-orange-700 dark:text-orange-300">Accumulated 1000+ AXON tokens</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
             {/* Recent Activity */}
             <Card>
               <CardHeader>
                 <CardTitle>Recent Activity</CardTitle>
-                <CardDescription>Your latest contributions to the Axon DeSci network</CardDescription>
+                <CardDescription>Your latest contributions to the Axon network</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 p-3 bg-secondary/20 rounded-lg">
                     <div className="w-2 h-2 rounded-full bg-green-500"></div>
                     <div className="flex-1">
-                      <p className="text-sm font-medium">Peer review completed: "Neural Network Optimization in Blockchain Systems"</p>
-                      <p className="text-xs text-muted-foreground">2 hours ago • +25 AXON tokens • Quality: 4.9/5</p>
+                      <p className="text-sm font-medium">Review completed for "Neural Network Optimization"</p>
+                      <p className="text-xs text-muted-foreground">2 hours ago • +25 AXON tokens</p>
                     </div>
                   </div>
                   
                   <div className="flex items-center gap-3 p-3 bg-secondary/20 rounded-lg">
                     <div className="w-2 h-2 rounded-full bg-blue-500"></div>
                     <div className="flex-1">
-                      <p className="text-sm font-medium">Research paper submitted: "Advanced ML Techniques for DeSci Applications"</p>
-                      <p className="text-xs text-muted-foreground">1 day ago • Under peer review • 2/3 reviewers assigned</p>
+                      <p className="text-sm font-medium">Manuscript submitted: "Advanced ML Techniques"</p>
+                      <p className="text-xs text-muted-foreground">1 day ago • Under review</p>
                     </div>
                   </div>
                   
                   <div className="flex items-center gap-3 p-3 bg-secondary/20 rounded-lg">
                     <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
                     <div className="flex-1">
-                      <p className="text-sm font-medium">Review assignment accepted for AI Ethics research</p>
-                      <p className="text-xs text-muted-foreground">3 days ago • 50 AXON tokens staked • Deadline: 5 days remaining</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3 p-3 bg-secondary/20 rounded-lg">
-                    <div className="w-2 h-2 rounded-full bg-purple-500"></div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium">Expertise verification completed for "Machine Learning" domain</p>
-                      <p className="text-xs text-muted-foreground">5 days ago • Domain reputation increased to Expert level</p>
+                      <p className="text-sm font-medium">Review assignment accepted</p>
+                      <p className="text-xs text-muted-foreground">3 days ago • 50 AXON staked</p>
                     </div>
                   </div>
                 </div>
