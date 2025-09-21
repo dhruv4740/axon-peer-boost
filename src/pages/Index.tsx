@@ -14,8 +14,7 @@ import {
   Clock, 
   Award,
   Plus,
-  Bell,
-  User
+  Bell
 } from "lucide-react";
 
 const Index = () => {
@@ -53,9 +52,6 @@ const Index = () => {
             <div className="flex items-center gap-3">
               <Button variant="ghost" size="sm">
                 <Bell className="h-4 w-4" />
-              </Button>
-              <Button variant="ghost" size="sm">
-                <User className="h-4 w-4" />
               </Button>
               <Button variant="neural" size="sm">
                 Connect Wallet
